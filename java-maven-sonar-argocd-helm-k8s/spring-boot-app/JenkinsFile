@@ -12,14 +12,14 @@ pipeline {
         //git branch: 'main', url: 'https://github.com/coooolk/Jenkins-Zero-To-Hero.git'
       }
     }
-    stage('install openjdk 17') {
+    /* stage('install openjdk 17') {
       steps {
         sh '''
             apt update
             apt install openjdk-17-jdk -y
            '''
       }
-    }
+    } */
     stage('Build and Test') {
       steps {
         sh 'ls -ltr'
