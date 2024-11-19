@@ -1,4 +1,5 @@
 pipeline {
+  agent none // Top-level agent is "none" because each stage defines its own agent
   environment {
     DOCKER_IMAGE = "coooolkpk/ultimate-cicd:${BUILD_NUMBER}"
     SONAR_URL = "http://192.168.0.145:9000"
